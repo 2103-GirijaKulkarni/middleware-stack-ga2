@@ -12,6 +12,7 @@ YOUR_EMAIL = "23f3000791@ds.study.iitm.ac.in"
 # Add the exact origin of your exam/verification page as well.
 ALLOWED_ORIGINS = [
     "https://app-w33sty.example.com",
+    "https://exam.sanand.workers.dev/tds-2026-09-ga2"
     # "https://your-exam-page-origin.example.com",
 ]
 # ---------------------------------------------
