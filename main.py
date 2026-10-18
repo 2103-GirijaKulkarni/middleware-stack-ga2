@@ -46,11 +46,7 @@ async def rate_limit_middleware(request: Request, call_next):
 
 @app.middleware("http")
 async def request_context_middleware(request: Request, call_next):
-    request_id = request.headers.get("X-Request-ID")
-
-    if not request_id:
-        request_id = str(uuid.uuid4())
-
+    request_id = request.headers.get("X-Request-ID") or str(uuid.uuid4())
     request.state.request_id = request_id
 
     response = await call_next(request)
