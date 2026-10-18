@@ -6,16 +6,12 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-# ---------- CHANGE THESE TWO VALUES ----------
 YOUR_EMAIL = "23f3000791@ds.study.iitm.ac.in"
 
-# Add the exact origin of your exam/verification page as well.
 ALLOWED_ORIGINS = [
     "https://app-w33sty.example.com",
-    "https://exam.sanand.workers.dev/tds-2026-09-ga2"
-    # "https://your-exam-page-origin.example.com",
+    "https://exam.sanand.workers.dev",
 ]
-# ---------------------------------------------
 
 RATE_LIMIT = 9
 WINDOW_SECONDS = 10
